@@ -1,0 +1,32 @@
+html, body {
+	height:100;
+}
+
+body {
+	margin:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+    margin-left: auto;
+	margin-right: auto;
+	transform: translate(0px, 50px);
+
+
+}
+.back {
+	color: black;
+	width: 115px;
+	height: 30px;
+	font-size: 30px;
+	border-radius: 50px;
+	background: grey;
+	text-align: center;
+	color: white; 
+	font-weight: bold;
+	-webkit-transition:   all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+  }
