@@ -1,7 +1,7 @@
 # Personal-Website
 Personal website where you can try out my games and projects!
 
-**Head to www.crystalcode.tk**
+**Head to https://crystalcode.tk/**
 
 ## Why
 - This website allows you to try the games and projects I made!
