@@ -1,6 +1,115 @@
+body {
+ background-image: url("Images/bkgd.jpg");
+ /* Full height */
+ height: 100%;
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: auto;
+ margin:0;
+ padding:0;
+ height:100%;
+}
+
+.footer {
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: RGB(230, 230, 230);
+  color: grey;
+  text-align: center;
+  clear: both;
+  position: absolute;
+  width: 100%;
+/* Height of the footer */
+
+
+}
+.footerw {
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: RGB(230, 230, 230);
+  color: grey;
+  text-align: center;
+  clear: both;
+  position: static;
+  width: 100%;
+/* Height of the footer */
+
+
+}
+/* Appearance */
+.links {
+	background-color: #1b3752;
+	background-image: linear-gradient(to bottom, #0003, transparent);
+	border-bottom: 1px solid #0003;
+	box-shadow: 0 0 32px #0003;
+	font-size: 2em;
+	font-weight: 300;
+}
+.links > a {
+	color: RGB(120, 120, 120);
+	padding: .55em;
+	text-align: center;
+  font-size: 25px;
+	text-decoration: none;
+	transition: all 0.5s;
+
+  align-items: center;
+
+}
+.links > a:hover {
+	background: RGB(25, 53, 85);
+	color: RGB(255, 255, 255);
+}
+.links > .line {
+	background: #3c79b3;
+	height: 3px;
+	pointer-events: none;
+}
+
+/* The Magic */
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.links {
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+	position: relative;
+}
+.links > .line {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(100% / var(--items)));
+	--index: 0;
+}
+.links > a:hover ~ .line {
+	opacity: 1;
+}
+.links > a:nth-of-type(1):hover ~ .line { --index: 1; }
+.links > a:nth-of-type(2):hover ~ .line { --index: 2; }
+.links > a:nth-of-type(3):hover ~ .line { --index: 3; }
+.links > a:nth-of-type(4):hover ~ .line { --index: 4; }
+.links > a:nth-of-type(5):hover ~ .line { --index: 5; }
+.links > a:nth-of-type(6):hover ~ .line { --index: 6; }
+.links > a:nth-of-type(7):hover ~ .line { --index: 7; }
+.links > a:nth-of-type(8):hover ~ .line { --index: 8; }
+.links > a:nth-of-type(9):hover ~ .line { --index: 9; }
+.links > a:nth-of-type(10):hover ~ .line { --index: 10; }
+.links > a:last-of-type:hover ~ .line { --index: var(--items); }
+
 h1 {
-  color: RGB(0, 100, 100);
-  font-size: 30px;
+  color: RGB(0, 0, 0);
+  font-size: 35px;
   font-family: "Cambria";
   text-align: center;
 }
@@ -98,7 +207,7 @@ butpage3 {
 }
 
 #subTitle{
-  color: orange;
+  color: #1b3752;
   font-size: 25px;
   font-family: fantasy;
   text-align: center;
@@ -106,27 +215,19 @@ butpage3 {
 }
 
 .mywork{
-  color: black;
-  width: 115px;
-  height: 25px;
-  background: grey;
-  padding: 10px;
+  color: blue;
   text-align: center;
-  border-radius: 50px;
-  color: white;
-  font-weight: bold;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  font-size: 20px;
 }
 
 .mywork:hover {
   cursor: pointer;
-  background: RGB(70, 70, 70);
+  background: RGB(200, 200, 200);
 }
-
+.myWork2 {
+  font-size: 20px;
+}
 .back {
   color: black;
   width: 115px;
@@ -135,7 +236,7 @@ butpage3 {
   border-radius: 50px;
   background: grey;
   text-align: center;
-  color: white; 
+  color: white;
   font-weight: bold;
   -webkit-transition:   all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -149,3 +250,6 @@ butpage3 {
   background: RGB(70, 70, 70);
 }
 
+lu {
+  text-align: center;
+}
