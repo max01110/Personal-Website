@@ -35,8 +35,8 @@ function isTie() {
 }
 function isO() {
 	background(255, 255, 255, 110);
-  textSize(80);
-  text("O Wins (AI)", 100, 380);
+  textSize(50);
+  text("O Wins (Computer)", 75, 330);
 }
 function isX() {
 	background(255, 255, 255, 110);
